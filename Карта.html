@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2571caa6775bd4c87223e7afab11e0d6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2571caa6775bd4c87223e7afab11e0d6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2571caa6775bd4c87223e7afab11e0d6 = L.map(
+                "map_2571caa6775bd4c87223e7afab11e0d6",
+                {
+                    center: [58.5213, 31.271],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_43c4aaea75e84804133f5ca3f17bd124 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2571caa6775bd4c87223e7afab11e0d6);
+        
+    
+            var marker_cluster_ee67577085a4582fa5187437ad37756e = L.markerClusterGroup(
+                {}
+            );
+            map_2571caa6775bd4c87223e7afab11e0d6.addLayer(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+            var circle_marker_d351ec5cf979dac43f25bef6a09b926e = L.circleMarker(
+                [55.80954999933465, 37.464439988818214],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_8a38a9848d0359055fdc8c96bc5e4ebb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af7e65716eaf49a2b0f6a81ff700f735 = $(`<div id="html_af7e65716eaf49a2b0f6a81ff700f735" style="width: 100.0%; height: 100.0%;">г Москва, ул Щукинская, д 42</div>`)[0];
+                popup_8a38a9848d0359055fdc8c96bc5e4ebb.setContent(html_af7e65716eaf49a2b0f6a81ff700f735);
+            
+        
+
+        circle_marker_d351ec5cf979dac43f25bef6a09b926e.bindPopup(popup_8a38a9848d0359055fdc8c96bc5e4ebb)
+        ;
+
+        
+    
+    
+            var circle_marker_8d84ca54c130c1bb63fd33afd15a8f94 = L.circleMarker(
+                [55.86052999173316, 37.60296996571262],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_89b5f59837c17893c16dec7a835e6426 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f5399c5bd7431e1749366f982068c74 = $(`<div id="html_0f5399c5bd7431e1749366f982068c74" style="width: 100.0%; height: 100.0%;">г Москва, ул Хачатуряна, д 16</div>`)[0];
+                popup_89b5f59837c17893c16dec7a835e6426.setContent(html_0f5399c5bd7431e1749366f982068c74);
+            
+        
+
+        circle_marker_8d84ca54c130c1bb63fd33afd15a8f94.bindPopup(popup_89b5f59837c17893c16dec7a835e6426)
+        ;
+
+        
+    
+    
+            var circle_marker_7b7c1f01145689d66bd8a3ff5d68ebf0 = L.circleMarker(
+                [55.746310006708995, 37.56310001833509],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_058b0f79df1df9bd82da9f791e70e97d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_687db95d6d062f4b2a51f08a34aea246 = $(`<div id="html_687db95d6d062f4b2a51f08a34aea246" style="width: 100.0%; height: 100.0%;">г Москва, ул Дорогомиловская Б., д 10</div>`)[0];
+                popup_058b0f79df1df9bd82da9f791e70e97d.setContent(html_687db95d6d062f4b2a51f08a34aea246);
+            
+        
+
+        circle_marker_7b7c1f01145689d66bd8a3ff5d68ebf0.bindPopup(popup_058b0f79df1df9bd82da9f791e70e97d)
+        ;
+
+        
+    
+    
+            var circle_marker_f9a331be42aa8e1b94e6c710b710c6ce = L.circleMarker(
+                [55.646110012031215, 37.73831004171552],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_3fb9841413b259c8b2f7fed5e7115629 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae521ef72f88d7d07bd48f14edc5e155 = $(`<div id="html_ae521ef72f88d7d07bd48f14edc5e155" style="width: 100.0%; height: 100.0%;">г Москва, б-р Новочеркасский, д 46</div>`)[0];
+                popup_3fb9841413b259c8b2f7fed5e7115629.setContent(html_ae521ef72f88d7d07bd48f14edc5e155);
+            
+        
+
+        circle_marker_f9a331be42aa8e1b94e6c710b710c6ce.bindPopup(popup_3fb9841413b259c8b2f7fed5e7115629)
+        ;
+
+        
+    
+    
+            var circle_marker_0c3e27f01f5ae4d56ff94452be9162b4 = L.circleMarker(
+                [59.915180015338194, 30.31737002093223],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_ace504b7fbc4b2dc1b1e458f9d030b14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6010bd8fa35c5e6fe47d044ca3d2ce91 = $(`<div id="html_6010bd8fa35c5e6fe47d044ca3d2ce91" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, ул 2-я Красноармейская, д 2/27</div>`)[0];
+                popup_ace504b7fbc4b2dc1b1e458f9d030b14.setContent(html_6010bd8fa35c5e6fe47d044ca3d2ce91);
+            
+        
+
+        circle_marker_0c3e27f01f5ae4d56ff94452be9162b4.bindPopup(popup_ace504b7fbc4b2dc1b1e458f9d030b14)
+        ;
+
+        
+    
+    
+            var circle_marker_5278254c18ff82552b34e4b3980aeaf3 = L.circleMarker(
+                [59.86793001176227, 30.26124999404942],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_b48ee9b5afb882883f74354eb5f09feb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03d562d22471b4f2697a1f9dced895a2 = $(`<div id="html_03d562d22471b4f2697a1f9dced895a2" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, пр-кт Стачек, д 90 литер а</div>`)[0];
+                popup_b48ee9b5afb882883f74354eb5f09feb.setContent(html_03d562d22471b4f2697a1f9dced895a2);
+            
+        
+
+        circle_marker_5278254c18ff82552b34e4b3980aeaf3.bindPopup(popup_b48ee9b5afb882883f74354eb5f09feb)
+        ;
+
+        
+    
+    
+            var circle_marker_946dce3356c854b50dd781a901c84f03 = L.circleMarker(
+                [59.8773299808974, 30.31898001689416],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_950499ba9ff04f026a6381be8fee0e7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77d1dc97b63b35062de73e9461004b37 = $(`<div id="html_77d1dc97b63b35062de73e9461004b37" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, просп. Московский, д 145</div>`)[0];
+                popup_950499ba9ff04f026a6381be8fee0e7e.setContent(html_77d1dc97b63b35062de73e9461004b37);
+            
+        
+
+        circle_marker_946dce3356c854b50dd781a901c84f03.bindPopup(popup_950499ba9ff04f026a6381be8fee0e7e)
+        ;
+
+        
+    
+    
+            var circle_marker_f92fe33ae35e148df10b9d3854b47c56 = L.circleMarker(
+                [59.826679984026896, 30.08178003601813],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_a36ea714645b97ea186d0c6ee4283098 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a60c0ee339bbe44bf0513a025540ae0f = $(`<div id="html_a60c0ee339bbe44bf0513a025540ae0f" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, г Колпино, пр-кт Ленина, д 37</div>`)[0];
+                popup_a36ea714645b97ea186d0c6ee4283098.setContent(html_a60c0ee339bbe44bf0513a025540ae0f);
+            
+        
+
+        circle_marker_f92fe33ae35e148df10b9d3854b47c56.bindPopup(popup_a36ea714645b97ea186d0c6ee4283098)
+        ;
+
+        
+    
+    
+            var circle_marker_b429eecc82cb36bdc09a926e84fa5668 = L.circleMarker(
+                [60.008709984835576, 30.41250001192674],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_2d21f59d219e77ccdf2057053a31f2d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97c1ffd2be7034626b59965202068ba0 = $(`<div id="html_97c1ffd2be7034626b59965202068ba0" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, пр-кт Науки, д 41</div>`)[0];
+                popup_2d21f59d219e77ccdf2057053a31f2d1.setContent(html_97c1ffd2be7034626b59965202068ba0);
+            
+        
+
+        circle_marker_b429eecc82cb36bdc09a926e84fa5668.bindPopup(popup_2d21f59d219e77ccdf2057053a31f2d1)
+        ;
+
+        
+    
+    
+            var circle_marker_75d5a8122c4db49451a690100776eca9 = L.circleMarker(
+                [59.732347071715346, 30.58095978375357],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_eb35df04d2a3f277a605b9289edf06fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51074dab8a521265d975625f15d911c6 = $(`<div id="html_51074dab8a521265d975625f15d911c6" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, г Колпино, ул Веры Слуцкой, д 38 литер а</div>`)[0];
+                popup_eb35df04d2a3f277a605b9289edf06fc.setContent(html_51074dab8a521265d975625f15d911c6);
+            
+        
+
+        circle_marker_75d5a8122c4db49451a690100776eca9.bindPopup(popup_eb35df04d2a3f277a605b9289edf06fc)
+        ;
+
+        
+    
+    
+            var circle_marker_141dae515bc684fcc5d0f8501b898efa = L.circleMarker(
+                [59.83583000480934, 30.145230037227833],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_41bf19aebcae2c27affa2a8a006342b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6291310c4bd6c0021300f1abc7d7a55 = $(`<div id="html_c6291310c4bd6c0021300f1abc7d7a55" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, пр-кт Ветеранов, д 141 к 1</div>`)[0];
+                popup_41bf19aebcae2c27affa2a8a006342b8.setContent(html_c6291310c4bd6c0021300f1abc7d7a55);
+            
+        
+
+        circle_marker_141dae515bc684fcc5d0f8501b898efa.bindPopup(popup_41bf19aebcae2c27affa2a8a006342b8)
+        ;
+
+        
+    
+    
+            var circle_marker_3bf1e7769d9042550150c91869e4e1f5 = L.circleMarker(
+                [60.03849000000008, 30.402130000000056],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_eab141b3aaadb84063852e4138785760 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cea72f4995d97920872ed1ccc245403 = $(`<div id="html_7cea72f4995d97920872ed1ccc245403" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, пр-кт Просвещения, д 67 литер а</div>`)[0];
+                popup_eab141b3aaadb84063852e4138785760.setContent(html_7cea72f4995d97920872ed1ccc245403);
+            
+        
+
+        circle_marker_3bf1e7769d9042550150c91869e4e1f5.bindPopup(popup_eab141b3aaadb84063852e4138785760)
+        ;
+
+        
+    
+    
+            var circle_marker_dac08344a517a3a5bdbc73b0de66d02f = L.circleMarker(
+                [60.03947001883736, 30.40295000672478],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_b1e39828da30add0f3b57bf2effd3fcb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83bbf6feadc2eb9434f8adad1f9585c5 = $(`<div id="html_83bbf6feadc2eb9434f8adad1f9585c5" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, пр-кт Просвещения, д 78 литер а</div>`)[0];
+                popup_b1e39828da30add0f3b57bf2effd3fcb.setContent(html_83bbf6feadc2eb9434f8adad1f9585c5);
+            
+        
+
+        circle_marker_dac08344a517a3a5bdbc73b0de66d02f.bindPopup(popup_b1e39828da30add0f3b57bf2effd3fcb)
+        ;
+
+        
+    
+    
+            var circle_marker_044d7ed5fc3bfe12e08501b3c0c3dea3 = L.circleMarker(
+                [59.94471000504899, 30.495190001323436],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_8a75a67cec90f4749036296d7cb21f97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3757a9a6c104a0fe48bdcb6566650984 = $(`<div id="html_3757a9a6c104a0fe48bdcb6566650984" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, пр-кт Косыгина, д 27 к 1</div>`)[0];
+                popup_8a75a67cec90f4749036296d7cb21f97.setContent(html_3757a9a6c104a0fe48bdcb6566650984);
+            
+        
+
+        circle_marker_044d7ed5fc3bfe12e08501b3c0c3dea3.bindPopup(popup_8a75a67cec90f4749036296d7cb21f97)
+        ;
+
+        
+    
+    
+            var circle_marker_b4d639f34bc64b7e548277951d9d77a6 = L.circleMarker(
+                [59.9324099812342, 30.36125003842696],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_a42feea2a8ecd3e2b20e5667858bdcdc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe094595d1344792d96c3721398290a4 = $(`<div id="html_fe094595d1344792d96c3721398290a4" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, пр-кт Лиговский, д 37 литер а</div>`)[0];
+                popup_a42feea2a8ecd3e2b20e5667858bdcdc.setContent(html_fe094595d1344792d96c3721398290a4);
+            
+        
+
+        circle_marker_b4d639f34bc64b7e548277951d9d77a6.bindPopup(popup_a42feea2a8ecd3e2b20e5667858bdcdc)
+        ;
+
+        
+    
+    
+            var circle_marker_84f5ba14a231e65e71ee47a00bab43d9 = L.circleMarker(
+                [55.80887999190432, 37.46224996515656],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_d17b3699ea584a45ae2ba32a1b18cc72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7cd368e3987cb13a7e349862db99d46 = $(`<div id="html_d7cd368e3987cb13a7e349862db99d46" style="width: 100.0%; height: 100.0%;">г Москва, ул Маршала Василевского, д 17</div>`)[0];
+                popup_d17b3699ea584a45ae2ba32a1b18cc72.setContent(html_d7cd368e3987cb13a7e349862db99d46);
+            
+        
+
+        circle_marker_84f5ba14a231e65e71ee47a00bab43d9.bindPopup(popup_d17b3699ea584a45ae2ba32a1b18cc72)
+        ;
+
+        
+    
+    
+            var circle_marker_021120fc753724ff0d63ef6f1ce65b7f = L.circleMarker(
+                [55.86197000269871, 37.604439983891524],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_eebdcb8f9eb1d005fe22cf03ac7bd510 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf00f4b95d06d7af8e511003444c5ec9 = $(`<div id="html_bf00f4b95d06d7af8e511003444c5ec9" style="width: 100.0%; height: 100.0%;">г Москва, ул Хачатуряна, д 20</div>`)[0];
+                popup_eebdcb8f9eb1d005fe22cf03ac7bd510.setContent(html_bf00f4b95d06d7af8e511003444c5ec9);
+            
+        
+
+        circle_marker_021120fc753724ff0d63ef6f1ce65b7f.bindPopup(popup_eebdcb8f9eb1d005fe22cf03ac7bd510)
+        ;
+
+        
+    
+    
+            var circle_marker_04527800abee140ceb3919a884ffe8fa = L.circleMarker(
+                [55.744739992425195, 37.56094000188676],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_210f5da4f6ec80ac605a466ad67d72dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cd12772260439dc15059cd0b3a59271 = $(`<div id="html_6cd12772260439dc15059cd0b3a59271" style="width: 100.0%; height: 100.0%;">г Москва, ул Брянская, д 8</div>`)[0];
+                popup_210f5da4f6ec80ac605a466ad67d72dc.setContent(html_6cd12772260439dc15059cd0b3a59271);
+            
+        
+
+        circle_marker_04527800abee140ceb3919a884ffe8fa.bindPopup(popup_210f5da4f6ec80ac605a466ad67d72dc)
+        ;
+
+        
+    
+    
+            var circle_marker_6374d694a9bb90bd29ef01675f5a6acf = L.circleMarker(
+                [55.64813000878698, 37.737249982420934],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_c9a3b25901e5bff30780fa6b7833b265 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60acf42c9b53100b05591017f03a4104 = $(`<div id="html_60acf42c9b53100b05591017f03a4104" style="width: 100.0%; height: 100.0%;">г Москва, б-р Новочеркасский, д 41 к 2</div>`)[0];
+                popup_c9a3b25901e5bff30780fa6b7833b265.setContent(html_60acf42c9b53100b05591017f03a4104);
+            
+        
+
+        circle_marker_6374d694a9bb90bd29ef01675f5a6acf.bindPopup(popup_c9a3b25901e5bff30780fa6b7833b265)
+        ;
+
+        
+    
+    
+            var circle_marker_635c4c9d6ddae1a1f013731e86bed990 = L.circleMarker(
+                [59.91589000444668, 30.316399983277734],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_9e4e4e49378282ab51586e43e3b00102 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fa0f504f466367ba65023a1f2905d88 = $(`<div id="html_7fa0f504f466367ba65023a1f2905d88" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, ул 1-я Красноармейская, д 4 литер а</div>`)[0];
+                popup_9e4e4e49378282ab51586e43e3b00102.setContent(html_7fa0f504f466367ba65023a1f2905d88);
+            
+        
+
+        circle_marker_635c4c9d6ddae1a1f013731e86bed990.bindPopup(popup_9e4e4e49378282ab51586e43e3b00102)
+        ;
+
+        
+    
+    
+            var circle_marker_0e5a1c2b343575fd5752376c9114ce51 = L.circleMarker(
+                [59.86839001060855, 30.25963002362272],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_76d201445048305c9035862fe1827b82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6a3e9e1c8881ebb52ef844834dad762 = $(`<div id="html_f6a3e9e1c8881ebb52ef844834dad762" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, пр-кт Стачек, д 73 литер а</div>`)[0];
+                popup_76d201445048305c9035862fe1827b82.setContent(html_f6a3e9e1c8881ebb52ef844834dad762);
+            
+        
+
+        circle_marker_0e5a1c2b343575fd5752376c9114ce51.bindPopup(popup_76d201445048305c9035862fe1827b82)
+        ;
+
+        
+    
+    
+            var circle_marker_536ce5b5a82ca252e85a4efb6b825894 = L.circleMarker(
+                [59.877250017541115, 30.320980022810858],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_1116e6b370428ff714da76f18b1dccdf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c8ef17a68f7625cf75a4090f1e93f6c = $(`<div id="html_9c8ef17a68f7625cf75a4090f1e93f6c" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, пр-кт Московский, д 172</div>`)[0];
+                popup_1116e6b370428ff714da76f18b1dccdf.setContent(html_9c8ef17a68f7625cf75a4090f1e93f6c);
+            
+        
+
+        circle_marker_536ce5b5a82ca252e85a4efb6b825894.bindPopup(popup_1116e6b370428ff714da76f18b1dccdf)
+        ;
+
+        
+    
+    
+            var circle_marker_578b465ba21d59205ad9c87e7c654e4a = L.circleMarker(
+                [59.826043813936266, 30.08159883614551],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_4ad96d9b903ab04f08cf94ac13421c05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc2bf0317fbf83b0e6c052a92c6e8dc3 = $(`<div id="html_fc2bf0317fbf83b0e6c052a92c6e8dc3" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, г Красное Село, пр-кт Ленина, д 92 к 1 литер а</div>`)[0];
+                popup_4ad96d9b903ab04f08cf94ac13421c05.setContent(html_fc2bf0317fbf83b0e6c052a92c6e8dc3);
+            
+        
+
+        circle_marker_578b465ba21d59205ad9c87e7c654e4a.bindPopup(popup_4ad96d9b903ab04f08cf94ac13421c05)
+        ;
+
+        
+    
+    
+            var circle_marker_4b65725a3877ac2cc4b02b211233df6d = L.circleMarker(
+                [60.00832583691442, 30.416723636287184],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_5379b76982411672cd1ce2cc4dbe34ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e47a72379629a9185f12cf87bbdcc8a3 = $(`<div id="html_e47a72379629a9185f12cf87bbdcc8a3" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, пр-кт Науки, д 30 к 1 литер а</div>`)[0];
+                popup_5379b76982411672cd1ce2cc4dbe34ad.setContent(html_e47a72379629a9185f12cf87bbdcc8a3);
+            
+        
+
+        circle_marker_4b65725a3877ac2cc4b02b211233df6d.bindPopup(popup_5379b76982411672cd1ce2cc4dbe34ad)
+        ;
+
+        
+    
+    
+            var circle_marker_afb47d3e51095d49e6a82da8017d0c1f = L.circleMarker(
+                [59.73433001885857, 30.5826900296764],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_f0a036b28bf189278ec6033ddf263207 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2fe43c4bff7150ee8b8369dbcf1868d = $(`<div id="html_e2fe43c4bff7150ee8b8369dbcf1868d" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, г Колпино, б-р Трудящихся, д 35 к 1 литер а</div>`)[0];
+                popup_f0a036b28bf189278ec6033ddf263207.setContent(html_e2fe43c4bff7150ee8b8369dbcf1868d);
+            
+        
+
+        circle_marker_afb47d3e51095d49e6a82da8017d0c1f.bindPopup(popup_f0a036b28bf189278ec6033ddf263207)
+        ;
+
+        
+    
+    
+            var circle_marker_9c67a72a74ecabfaf3a9db0b8aa3749a = L.circleMarker(
+                [59.833890013319376, 30.14617995831472],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_c285c61d30e512b8484c0329f5a86e50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6181e8bc0700c736772d596c6983ee36 = $(`<div id="html_6181e8bc0700c736772d596c6983ee36" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, ул Пограничника Гарькавого, д 33 литер а</div>`)[0];
+                popup_c285c61d30e512b8484c0329f5a86e50.setContent(html_6181e8bc0700c736772d596c6983ee36);
+            
+        
+
+        circle_marker_9c67a72a74ecabfaf3a9db0b8aa3749a.bindPopup(popup_c285c61d30e512b8484c0329f5a86e50)
+        ;
+
+        
+    
+    
+            var circle_marker_b33fcaff7e07c9ffb57762ecf09d0aee = L.circleMarker(
+                [60.03849000000008, 30.402130000000056],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_e7e1d3cbc3e395d85ea9bb9eab4ed3bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74aba050c9d4bfd0c12b985f9237b4b1 = $(`<div id="html_74aba050c9d4bfd0c12b985f9237b4b1" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, пр-кт Просвещения, д 53 к 1 литер а</div>`)[0];
+                popup_e7e1d3cbc3e395d85ea9bb9eab4ed3bb.setContent(html_74aba050c9d4bfd0c12b985f9237b4b1);
+            
+        
+
+        circle_marker_b33fcaff7e07c9ffb57762ecf09d0aee.bindPopup(popup_e7e1d3cbc3e395d85ea9bb9eab4ed3bb)
+        ;
+
+        
+    
+    
+            var circle_marker_f560eb86fc40de0114664b36088ac48f = L.circleMarker(
+                [59.94573882533318, 30.49653122899472],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_4eaf5f52430136b10547d8ff2eb61505 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20972eb517dec17820b526368a848922 = $(`<div id="html_20972eb517dec17820b526368a848922" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, пр-кт Косыгина, д 28 к 1</div>`)[0];
+                popup_4eaf5f52430136b10547d8ff2eb61505.setContent(html_20972eb517dec17820b526368a848922);
+            
+        
+
+        circle_marker_f560eb86fc40de0114664b36088ac48f.bindPopup(popup_4eaf5f52430136b10547d8ff2eb61505)
+        ;
+
+        
+    
+    
+            var circle_marker_9b90b2f73860e29427e165673b5a5d9c = L.circleMarker(
+                [59.931870019031635, 30.35922999976168],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ee67577085a4582fa5187437ad37756e);
+        
+    
+        var popup_8ba6139e3b1869d6c5817cddf8a962b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bb7e14701d88b056888a7fa6eaae01f = $(`<div id="html_2bb7e14701d88b056888a7fa6eaae01f" style="width: 100.0%; height: 100.0%;">г Санкт-Петербург, пр-кт Невский, д 114-116</div>`)[0];
+                popup_8ba6139e3b1869d6c5817cddf8a962b3.setContent(html_2bb7e14701d88b056888a7fa6eaae01f);
+            
+        
+
+        circle_marker_9b90b2f73860e29427e165673b5a5d9c.bindPopup(popup_8ba6139e3b1869d6c5817cddf8a962b3)
+        ;
+
+        
+    
+</script>
+</html>
